@@ -1,5 +1,4 @@
 package CT417.assign1;
-
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
@@ -40,4 +39,12 @@ public class Student {
 		long age = ChronoUnit.YEARS.between(dateofbirth, today); //years between
 		return (int)age;
 	}
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 }
+
