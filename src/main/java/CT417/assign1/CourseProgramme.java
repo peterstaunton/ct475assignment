@@ -33,7 +33,7 @@ public class CourseProgramme {
 	public String getName() {
 		return name;
 	}
-	public ArrayList<Modules> listModules() {
+	public ArrayList<Module> listModules() {
 		return subjects;
 	}
 	
