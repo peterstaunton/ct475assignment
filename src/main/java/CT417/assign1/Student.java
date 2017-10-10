@@ -25,34 +25,6 @@ public class Student {
 		this.username = getUsername();
 	}
 
-//	/**
-//	 * @param name of Student nm
-//	 * removes whitespace from Student's name and adds integer to create unique username
-//	 * @return username 
-//	 */
-//	private String createUsername(String nm){
-//		String un = nm.replaceAll(" ", ""); //replaces whitespace from name / makes full name one word
-//		checkUsername(1, un);		
-//		return un; }
-//	private String inttoString(int n){ //takes integer n, returns it as a string object
-//		return Integer.toString(n); }
-	
-//	/**
-//	 * @param int n added to end of String un
-//	 * Checks if username already exists
-//	 * If it does, increment username and check again
-//	 * If username doesn't exist, adds new username to list of usernames
-//	 * @return created usrname
-//	 */
-//	private String checkUsername(int n, String un){
-//		String nn = inttoString(n); //make int n a String
-//		un += nn; //adds n to end of String un
-//		if(!studentUsernames.contains(un)) {
-//			studentUsernames.add(un); //if username does not exist, add to usernames list
-//			return un; //returns username added to list
-//		}
-//		else checkUsername(n+1, un); //increments username and tries again
-//		return null;	}
 	/**
 	 * @return Student's name without spaces and age added to end
 	 */
@@ -65,8 +37,6 @@ public class Student {
 
 	int getAge() {
 		LocalDate today             = LocalDate.now(); //today's date as LocalDate object
-//		LocalDate birthday = new java.sql.Date(dob.getTime()).toLocalDate(); //converts Date dob into LocalDate birthday
-
 		long age = ChronoUnit.YEARS.between(dateofbirth, today); //years between
 		return (int)age;
 	}
