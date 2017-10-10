@@ -15,6 +15,9 @@ public class Module {
 	public void addStudent(Student student){ //adds student to list
 		studentlist.add(student);
 	}
+	public ArrayList<Student> listStudents(){
+		return studentlist;
+	}
 	
 
 }
