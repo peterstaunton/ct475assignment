@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 public class CourseProgramme {
 	private String name; //Name of course e.g. CS & IT, ECE, EEE etc.
-	private ArrayList<Module> subjects;
+	protected ArrayList<Module> subjects;
 	private LocalDate startdate; //start of academic year
 	private LocalDate enddate; //end of academic year
 	
@@ -30,6 +30,8 @@ public class CourseProgramme {
 	public void setEndDate(int dd, int mm, int yy){ //sets end of academic year (day/month/year)
 		enddate = LocalDate.of(yy,  mm,  dd);
 	}
-	
+	public String getName() {
+		return name;
+	}
 	
 }
